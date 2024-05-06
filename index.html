@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汉诺塔小游戏</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="cloumns" id="c1">
+        </div>
+        <div class="cloumns" id="c2"></div>
+        <div class="cloumns" id="c3"></div>
+        <div class="bot"></div>
+
+         <!-- 胜利时的弹出框 -->
+    <div class="success">
+        <div>恭喜你，智商超人哦！！</div>
+    </div>
+    </div>
+    <div class="btns">
+        <div>
+            <button data-from="c1" data-to="c3">左</button>
+            <button data-from="c1" data-to="c2">右</button>
+        </div>
+        <div>
+            <button data-from="c2" data-to="c1">左</button>
+            <button data-from="c2" data-to="c3">右</button>
+        </div>
+        <div>
+            <button data-from="c3" data-to="c2">左</button>
+            <button data-from="c3" data-to="c1">右</button>
+        </div>
+    </div>
+
+   
+    
+    <script src="./index.js"></script>
+</body>
+</html>
